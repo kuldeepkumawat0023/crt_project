@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Recruitment Training – Complete Guide</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ── SIDEBAR ── -->
+    <nav id="sidebar">
+        <div class="brand">
+            <div class="brand-tag">Artifact Geeks</div>
+            <div class="brand-title">Campus Recruitment Training</div>
+        </div>
+        <nav>
+            <div class="nav-section-label">Navigation</div>
+            <a class="nav-item active" onclick="show('cover')"><span class="num">—</span> Cover &amp; Overview</a>
+
+            <div class="nav-section-label">Program Chapters</div>
+            <a class="nav-item" onclick="show('ch1')"><span class="num">01</span> Program Overview</a>
+            <a class="nav-item" onclick="show('ch2')"><span class="num">02</span> How Program is Conducted</a>
+            <a class="nav-item" onclick="show('ch3')"><span class="num">03</span> Role of TPO &amp; Teachers</a>
+            <a class="nav-item" onclick="show('ch4')"><span class="num">04</span> Student Benefits</a>
+            <a class="nav-item" onclick="show('ch5')"><span class="num">05</span> CBT &amp; Learning Portal</a>
+            <a class="nav-item" onclick="show('ch6')"><span class="num">06</span> Mentors &amp; Guidance</a>
+            <a class="nav-item" onclick="show('ch7')"><span class="num">07</span> Books &amp; Study Materials</a>
+            <a class="nav-item" onclick="show('ch8')"><span class="num">08</span> Program Phases</a>
+            <a class="nav-item" onclick="show('ch9')"><span class="num">09</span> Benefits for College</a>
+            <a class="nav-item" onclick="show('ch10')"><span class="num">10</span> Benefits for Artifact Geeks</a>
+            <a class="nav-item" onclick="show('ch11')"><span class="num">11</span> Rules &amp; Important Notes</a>
+            <a class="nav-item" onclick="show('ch12')"><span class="num">12</span> CRT Policy</a>
+            <a class="nav-item" onclick="show('ch13')"><span class="num">13</span> Student Consent Form</a>
+        </nav>
+    </nav>
+
+    <!-- ── MAIN ── -->
+    <main id="main">
+
+        <!-- ══ COVER ══ -->
+        <section id="cover" class="chapter active">
+            <div
+                style="min-height:100vh; background:var(--navy); display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:80px 100px; position:relative; overflow:hidden;">
+                <div
+                    style="position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle, rgba(212,168,67,0.15) 0%, transparent 70%);pointer-events:none;">
+                </div>
+                <div
+                    style="position:absolute;bottom:-80px;left:40%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle, rgba(14,116,144,0.12) 0%, transparent 70%);pointer-events:none;">
+                </div>
+
+                <div class="cover-eyebrow">Artifact Geeks · Batch 2026</div>
+                <h1 class="cover-title">Campus<br>Recruitment<br><span>Training</span></h1>
+                <div class="cover-rule"></div>
+                <p class="cover-subtitle">A comprehensive guide for students, faculty, and placement officers — covering
+                    every phase of structured placement preparation.</p>
+
+                <div class="cover-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">90</span>
+                        <span class="stat-label">Days Program</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Training Phases</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">13</span>
+                        <span class="stat-label">Chapters</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">4</span>
+                        <span class="stat-label">Core Books</span>
+                    </div>
+                </div>
+
+                <div class="cover-badge">Complete Program Reference Guide</div>
+                <div class="cover-corner-art">CRT</div>
+            </div>
+
+            <div class="ch-body" style="padding-top:60px;">
+                <div class="section-title" style="font-size:28px;margin-bottom:24px;">Table of Contents</div>
+                <div class="toc-grid">
+                    <a class="toc-item" onclick="show('ch1')"><span class="toc-num">01</span><span
+                            class="toc-name">Program Overview</span></a>
+                    <a class="toc-item" onclick="show('ch2')"><span class="toc-num">02</span><span class="toc-name">How
+                            Program is Conducted</span></a>
+                    <a class="toc-item" onclick="show('ch3')"><span class="toc-num">03</span><span class="toc-name">Role
+                            of TPO &amp; Teachers</span></a>
+                    <a class="toc-item" onclick="show('ch4')"><span class="toc-num">04</span><span
+                            class="toc-name">Student Benefits &amp; Why CRT</span></a>
+                    <a class="toc-item" onclick="show('ch5')"><span class="toc-num">05</span><span class="toc-name">CBT
+                            &amp; Learning Portal</span></a>
+                    <a class="toc-item" onclick="show('ch6')"><span class="toc-num">06</span><span
+                            class="toc-name">Mentors &amp; Guidance</span></a>
+                    <a class="toc-item" onclick="show('ch7')"><span class="toc-num">07</span><span
+                            class="toc-name">Books &amp; Study Materials</span></a>
+                    <a class="toc-item" onclick="show('ch8')"><span class="toc-num">08</span><span
+                            class="toc-name">Program Phases &amp; Structure</span></a>
+                    <a class="toc-item" onclick="show('ch9')"><span class="toc-num">09</span><span
+                            class="toc-name">Benefits for College</span></a>
+                    <a class="toc-item" onclick="show('ch10')"><span class="toc-num">10</span><span
+                            class="toc-name">Benefits for Artifact Geeks</span></a>
+                    <a class="toc-item" onclick="show('ch11')"><span class="toc-num">11</span><span
+                            class="toc-name">Rules &amp; Important Notes</span></a>
+                    <a class="toc-item" onclick="show('ch12')"><span class="toc-num">12</span><span class="toc-name">CRT
+                            Policy</span></a>
+                    <a class="toc-item" onclick="show('ch13')"><span class="toc-num">13</span><span
+                            class="toc-name">Student Consent Form</span></a>
+                </div>
+
+                <div class="callout">
+                    <p>Campus Recruitment Training is not just a training program — it is an investment in your career.
+                        The CRT program bridges the gap between academic learning and industry requirements, helping
+                        students successfully transition from college to professional careers.</p>
+                    <span class="callout-source">— CRT Program Mission</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 1: Program Overview ══ -->
+        <section id="ch1" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 01</div>
+                <h2 class="ch-title">Program Overview</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>To provide college management and faculty with a clear understanding of the CRT Program,
+                        including the training structure, implementation plan, responsibilities, and expected outcomes.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">What is CRT?</div>
+                    <p>Campus Recruitment Training (CRT) is a structured training program designed to prepare students
+                        for campus placements and off-campus job opportunities. The program focuses on developing
+                        technical skills, aptitude, communication, interview readiness, and industry exposure so that
+                        students become job-ready and confident candidates.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Program Delivery Methods</div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <span class="card-icon">🎓</span>
+                            <div class="card-title">Instructor-Led Training</div>
+                            <div class="card-desc">Live sessions with experienced industry professionals and trainers.
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon">📝</span>
+                            <div class="card-title">Practical Assignments</div>
+                            <div class="card-desc">Hands-on tasks to reinforce concepts learned in sessions.</div>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon">📊</span>
+                            <div class="card-title">Mock Assessments</div>
+                            <div class="card-desc">Simulated tests and CBTs to measure student progress.</div>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon">📄</span>
+                            <div class="card-title">Resume &amp; LinkedIn Building</div>
+                            <div class="card-desc">Guided profile building sessions to improve recruiter visibility.
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon">🎤</span>
+                            <div class="card-title">Mock Interviews</div>
+                            <div class="card-desc">Technical and HR interview simulations for real-world readiness.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Expected Outcomes</div>
+                    <div class="benefit-grid">
+                        <div class="benefit-pill"><span class="bp-icon">💪</span>
+                            <div class="bp-text">Improved interview confidence</div>
+                        </div>
+                        <div class="benefit-pill"><span class="bp-icon">⚙️</span>
+                            <div class="bp-text">Better technical skills</div>
+                        </div>
+                        <div class="benefit-pill"><span class="bp-icon">🗣️</span>
+                            <div class="bp-text">Stronger communication</div>
+                        </div>
+                        <div class="benefit-pill"><span class="bp-icon">🏢</span>
+                            <div class="bp-text">Increased placement opportunities</div>
+                        </div>
+                        <div class="benefit-pill"><span class="bp-icon">🎯</span>
+                            <div class="bp-text">Industry-ready graduates</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('cover')">← Table of Contents</button>
+                <button class="ch-nav-btn" onclick="show('ch2')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 2: How Program is Conducted ══ -->
+        <section id="ch2" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 02</div>
+                <h2 class="ch-title">How the Program Will Be Conducted</h2>
+            </div>
+            <div class="ch-body">
+                <p>The CRT program follows a structured training approach to ensure maximum student engagement and
+                    measurable outcomes.</p>
+                <div class="divider"></div>
+
+                <div class="section">
+                    <div class="section-title">Step 1 · Student Assessment</div>
+                    <p>Before training begins, an initial assessment test evaluates students' current skill levels to
+                        identify gaps and customize the program accordingly.</p>
+                    <ul class="bullet-list">
+                        <li>Aptitude &amp; Quantitative Ability</li>
+                        <li>Communication Skills</li>
+                        <li>Technical Knowledge</li>
+                        <li>Problem-Solving Ability</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Step 2 · Training Modules</div>
+                    <div class="card-grid">
+                        <div class="card"><span class="card-icon">🧮</span>
+                            <div class="card-title">Aptitude &amp; Logical Reasoning</div>
+                        </div>
+                        <div class="card"><span class="card-icon">💬</span>
+                            <div class="card-title">Communication &amp; Soft Skills</div>
+                        </div>
+                        <div class="card"><span class="card-icon">💻</span>
+                            <div class="card-title">Technical Skills</div>
+                        </div>
+                        <div class="card"><span class="card-icon">📄</span>
+                            <div class="card-title">Resume Building</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🔗</span>
+                            <div class="card-title">LinkedIn Optimization</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🎤</span>
+                            <div class="card-title">Interview Preparation</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🔄</span>
+                            <div class="card-title">Mock Interviews &amp; Practice Tests</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Step 3 · Continuous Evaluation</div>
+                    <ul class="bullet-list">
+                        <li>Daily CBT (Computer-Based Tests)</li>
+                        <li>Practice Assignments</li>
+                        <li>Coding or Technical Tasks</li>
+                        <li>Mock Interviews</li>
+                        <li>Performance Tracking</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Step 4 · Placement Readiness</div>
+                    <ul class="bullet-list">
+                        <li>Resume review sessions</li>
+                        <li>Mock HR interviews</li>
+                        <li>Mock technical interviews</li>
+                        <li>Group discussion practice</li>
+                        <li>Industry-specific preparation</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">What We Need from College</div>
+                    <div class="subsection">
+                        <div class="subsection-title">Infrastructure Support</div>
+                        <ul class="bullet-list">
+                            <li>Classroom or seminar hall for training sessions</li>
+                            <li>Projector or smart classroom setup</li>
+                            <li>Internet connectivity for online tools and assessments</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <div class="subsection-title">Student Coordination</div>
+                        <ul class="bullet-list">
+                            <li>Nomination of a college coordinator or faculty representative</li>
+                            <li>Student attendance management</li>
+                            <li>Communication with students regarding schedules and assessments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">What We Provide to College</div>
+                    <ul class="bullet-list">
+                        <li>Comprehensive CRT training program aligned with current industry hiring</li>
+                        <li>Industry professionals as trainers</li>
+                        <li>Study materials, practice questions, assignments, interview resources</li>
+                        <li>Regular performance reports and skill improvement tracking</li>
+                        <li>Resume building, interview preparation, and career guidance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch1')">← Chapter 01</button>
+                <button class="ch-nav-btn" onclick="show('ch3')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 3: Role of TPO & Teachers ══ -->
+        <section id="ch3" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 03</div>
+                <h2 class="ch-title">Role of TPO &amp; Teachers in the CRT Program</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The success of the CRT program depends on active collaboration between the Training Partner, the
+                        Training &amp; Placement Officer (TPO), and the Faculty Members.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Role of the TPO</div>
+                    <div class="subsection">
+                        <div class="subsection-title">Program Coordination</div>
+                        <ul class="bullet-list">
+                            <li>Act as the primary point of contact between the college and the training partner</li>
+                            <li>Coordinate the training schedule and classroom availability</li>
+                            <li>Share program updates with faculty members and students</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <div class="subsection-title">Student Mobilization</div>
+                        <ul class="bullet-list">
+                            <li>Encourage students from relevant streams to register for the CRT program</li>
+                            <li>Promote the importance of placement preparation through announcements and notices</li>
+                            <li>Ensure maximum awareness about the program among students</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <div class="subsection-title">Monitoring Participation</div>
+                        <ul class="bullet-list">
+                            <li>Track student registrations and attendance</li>
+                            <li>Motivate students to attend sessions regularly and complete assignments</li>
+                            <li>Identify students who are not actively participating and encourage them</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <div class="subsection-title">Placement Alignment</div>
+                        <ul class="bullet-list">
+                            <li>Share upcoming placement opportunities and company requirements with the training team
+                            </li>
+                            <li>Help align the CRT program with the college placement calendar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Role of Faculty Members</div>
+                    <div class="card-grid">
+                        <div class="card"><span class="card-icon">🌟</span>
+                            <div class="card-title">Student Motivation</div>
+                            <div class="card-desc">Encourage active participation and explain the importance of
+                                placement preparation.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">📅</span>
+                            <div class="card-title">Academic Alignment</div>
+                            <div class="card-desc">Help students balance academic learning and placement preparation
+                                without conflicts.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">👁️</span>
+                            <div class="card-title">Participation Monitoring</div>
+                            <div class="card-desc">Ensure students maintain regular attendance and guide assignment
+                                completion.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🤝</span>
+                            <div class="card-title">Mentorship Support</div>
+                            <div class="card-desc">Build student confidence and motivate them to stay consistent
+                                throughout the program.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Strategies to Increase Student Participation</div>
+                    <div class="rule-box">
+                        <div class="rule-num">01</div>
+                        <div class="rule-content">
+                            <h4>Awareness Sessions</h4>
+                            <p>Conduct orientation sessions explaining the importance of CRT, placement strategies, and
+                                career opportunities after training.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">02</div>
+                        <div class="rule-content">
+                            <h4>Communication Channels</h4>
+                            <p>Use WhatsApp groups, notice boards, classroom announcements, and email to spread
+                                information.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">03</div>
+                        <div class="rule-content">
+                            <h4>Faculty Encouragement</h4>
+                            <p>Faculty members recommend CRT during classes and highlight the benefits of placement
+                                preparation.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">04</div>
+                        <div class="rule-content">
+                            <h4>Recognition &amp; Motivation</h4>
+                            <p>100% placement assistance, performance recognition, leaderboards, and top performer
+                                highlights.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">05</div>
+                        <div class="rule-content">
+                            <h4>Regular Feedback</h4>
+                            <p>Collect feedback from students and faculty to continuously improve the program and
+                                maintain high engagement levels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch2')">← Chapter 02</button>
+                <button class="ch-nav-btn" onclick="show('ch4')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 4: Student Benefits ══ -->
+        <section id="ch4" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 04</div>
+                <h2 class="ch-title">Student Benefits &amp; Why Students Should Choose CRT</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>To help students understand the importance of Campus Recruitment Training and how it can
+                        significantly improve their chances of getting placed.</p>
+                </div>
+
+                <p>Many students complete their academic studies but still struggle during placement interviews due to
+                    lack of practical skills, interview preparation, and confidence. CRT is designed to bridge that gap.
+                </p>
+                <div class="divider"></div>
+
+                <div class="section">
+                    <div class="section-title">Key Benefits for Students</div>
+                    <div class="rule-box">
+                        <div class="rule-num">1</div>
+                        <div class="rule-content">
+                            <h4>Placement Preparation</h4>
+                            <p>Complete guidance on aptitude tests, technical interviews, HR interviews, and group
+                                discussions — so students feel confident during real drives.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">2</div>
+                        <div class="rule-content">
+                            <h4>Aptitude &amp; Problem-Solving Skills</h4>
+                            <p>Practice quantitative aptitude, logical reasoning, analytical thinking, and
+                                problem-solving techniques to improve speed and accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">3</div>
+                        <div class="rule-content">
+                            <h4>Technical Skill Development</h4>
+                            <p>Strengthen technical knowledge, practice interview questions, and learn real-world
+                                industry concepts based on field of study.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">4</div>
+                        <div class="rule-content">
+                            <h4>Communication &amp; Soft Skills</h4>
+                            <p>Improve spoken English, communication confidence, presentation skills, and professional
+                                behavior for interviews.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">5</div>
+                        <div class="rule-content">
+                            <h4>Resume &amp; LinkedIn Profile Building</h4>
+                            <p>Create a professional resume, highlight skills and achievements, and build an optimized
+                                LinkedIn profile noticed by recruiters.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">6</div>
+                        <div class="rule-content">
+                            <h4>Mock Interviews &amp; Real Practice</h4>
+                            <p>Participate in mock HR interviews, mock technical interviews, and group discussions to
+                                reduce nervousness and understand expectations.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">7</div>
+                        <div class="rule-content">
+                            <h4>Confidence Building</h4>
+                            <p>Through continuous practice, feedback, and mentoring, students develop self-confidence,
+                                interview readiness, and professional mindset.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <p>Campus Recruitment Training is not just a training program — it is an investment in your career.
+                        By participating in CRT, students gain the skills, confidence, and preparation needed to succeed
+                        in competitive job markets.</p>
+                    <span class="callout-source">— Final Message to Students</span>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch3')">← Chapter 03</button>
+                <button class="ch-nav-btn" onclick="show('ch5')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 5: CBT Portal ══ -->
+        <section id="ch5" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 05</div>
+                <h2 class="ch-title">Portal for CBT &amp; Learning Resources</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The CBT Portal serves as a central learning and assessment platform — used for online tests and
+                        for sharing daily study materials, notes, assignments, and practice resources.</p>
+                </div>
+
+                <p>The CRT Portal is an online platform where students can access all training-related resources in one
+                    place, helping them stay organized, practice regularly, and track progress throughout the program.
+                </p>
+                <div class="divider"></div>
+
+                <div class="section">
+                    <div class="section-title">Key Portal Features</div>
+                    <div class="card-grid">
+                        <div class="card"><span class="card-icon">📒</span>
+                            <div class="card-title">Daily Notes &amp; Study Materials</div>
+                            <div class="card-desc">After every session, notes with key concepts, practice questions,
+                                formulas, and extra resources are uploaded.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🖥️</span>
+                            <div class="card-title">Computer-Based Practice Tests</div>
+                            <div class="card-desc">Regular online tests covering aptitude, logical reasoning, technical
+                                assessments, and mock placement tests.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">✅</span>
+                            <div class="card-title">Assignments &amp; Practice Tasks</div>
+                            <div class="card-desc">Aptitude sheets, coding tasks, communication exercises, and interview
+                                preparation questions.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">📈</span>
+                            <div class="card-title">Performance Tracking</div>
+                            <div class="card-desc">Automatic tracking of test scores, assignment completion, and
+                                participation in assessments.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Benefits for Students</div>
+                    <ul class="bullet-list">
+                        <li>Easy access to daily notes and training materials anytime</li>
+                        <li>Continuous learning beyond classroom sessions</li>
+                        <li>Regular practice through CBT assessments</li>
+                        <li>Clear understanding of strengths and improvement areas</li>
+                        <li>Better retention through revision capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Benefits for College</div>
+                    <ul class="bullet-list">
+                        <li>Maintaining a structured and transparent learning system</li>
+                        <li>Tracking student engagement and performance at all times</li>
+                        <li>Ensuring consistent learning throughout the CRT program</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch4')">← Chapter 04</button>
+                <button class="ch-nav-btn" onclick="show('ch6')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 6: Mentors ══ -->
+        <section id="ch6" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 06</div>
+                <h2 class="ch-title">Mentors: Dedicated Industry-Led Guidance</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The CRT program assigns dedicated mentors for each subject/module to ensure students receive
+                        expert guidance, practical insights, and continuous support throughout the training.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Mentor-Based Learning Approach</div>
+                    <p>Every training module is handled by a specialized mentor with relevant industry experience.
+                        Students learn practical concepts, real-world examples, and industry-relevant skills rather than
+                        only theoretical knowledge.</p>
+                    <div class="card-grid">
+                        <div class="card"><span class="card-icon">🧮</span>
+                            <div class="card-title">Aptitude &amp; Logical Reasoning</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🗣️</span>
+                            <div class="card-title">Communication &amp; Soft Skills</div>
+                        </div>
+                        <div class="card"><span class="card-icon">💻</span>
+                            <div class="card-title">Technical Skills</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🎤</span>
+                            <div class="card-title">Interview Preparation</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🔗</span>
+                            <div class="card-title">Resume &amp; LinkedIn Optimization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Mentor Responsibilities</div>
+                    <div class="rule-box">
+                        <div class="rule-num">1</div>
+                        <div class="rule-content">
+                            <h4>Conduct Training Sessions</h4>
+                            <p>Deliver structured sessions for their subjects, ensuring students clearly understand
+                                concepts and industry applications.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">2</div>
+                        <div class="rule-content">
+                            <h4>Provide Industry Insights</h4>
+                            <p>Share real-world experiences, industry expectations, and hiring trends so students
+                                understand how companies evaluate candidates.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">3</div>
+                        <div class="rule-content">
+                            <h4>Guide Students in Problem Solving</h4>
+                            <p>Step-by-step guidance for aptitude, technical problems, and interview challenges. Tips
+                                and strategies to improve performance.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">4</div>
+                        <div class="rule-content">
+                            <h4>Monitor Student Progress</h4>
+                            <p>Regular evaluation through CBT tests, assignments, practice sessions, and mock interviews
+                                with personalized feedback.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">5</div>
+                        <div class="rule-content">
+                            <h4>Career Guidance &amp; Motivation</h4>
+                            <p>Help students identify their strengths, provide career guidance, and motivate them to
+                                stay consistent during the program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch5')">← Chapter 05</button>
+                <button class="ch-nav-btn" onclick="show('ch7')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 7: Books ══ -->
+        <section id="ch7" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 07</div>
+                <h2 class="ch-title">Books &amp; Study Materials for CRT</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>To support students in structured placement preparation, the CRT program provides specialized
+                        books covering the most important subjects required for campus recruitment.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Four Core Books</div>
+                    <div class="rule-box">
+                        <div class="rule-num">1</div>
+                        <div class="rule-content">
+                            <h4>📗 Aptitude Preparation Book</h4>
+                            <p>Quantitative aptitude, logical reasoning, data interpretation, problem-solving
+                                techniques, practice questions with solutions, and time management strategies for
+                                aptitude tests.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">2</div>
+                        <div class="rule-content">
+                            <h4>📘 Data Structures &amp; Algorithms (DSA) Book</h4>
+                            <p>Basic programming logic, arrays and strings, linked lists, stacks and queues, trees and
+                                graphs, searching and sorting algorithms, coding practice problems, and interview-level
+                                questions.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">3</div>
+                        <div class="rule-content">
+                            <h4>📙 Communication Skills Book</h4>
+                            <p>Spoken English, professional communication, group discussion techniques, presentation
+                                skills, interview communication tips, and workplace etiquette.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">4</div>
+                        <div class="rule-content">
+                            <h4>📕 Object-Oriented Programming (OOPS) Book</h4>
+                            <p>OOP fundamentals, classes and objects, inheritance, polymorphism, encapsulation and
+                                abstraction, real-world examples, and OOP interview questions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Book Branding Options</div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <span class="card-icon">🏫</span>
+                            <div class="card-title">College-Branded Books</div>
+                            <div class="card-desc">Books carry the college name and logo, making them official CRT
+                                preparation materials for the institution.</div>
+                        </div>
+                        <div class="card">
+                            <span class="card-icon">🏢</span>
+                            <div class="card-title">Training Partner-Branded Books</div>
+                            <div class="card-desc">Books branded under Artifact Geeks, highlighting the training partner
+                                responsible for the CRT program.</div>
+                        </div>
+                    </div>
+                    <p style="font-size:13px;color:var(--text-light);margin-top:8px;">Final branding depends on who
+                        covers the printing and distribution cost of the books.</p>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch6')">← Chapter 06</button>
+                <button class="ch-nav-btn" onclick="show('ch8')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 8: Program Phases ══ -->
+        <section id="ch8" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 08</div>
+                <h2 class="ch-title">CRT Program Phases &amp; Training Structure</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The CRT program is designed in three structured phases over 75–90 days, gradually developing
+                        technical skills, problem-solving ability, communication confidence, and interview readiness.
+                    </p>
+                </div>
+                <div class="divider"></div>
+
+                <div class="phase-timeline">
+
+                    <div class="phase-item">
+                        <div class="phase-dot">1</div>
+                        <div class="phase-header">
+                            <div class="phase-title">Phase 1 — Foundation &amp; Core Technical Skills</div>
+                            <div class="phase-duration">30–40 Days</div>
+                        </div>
+                        <div class="phase-body">
+                            <div class="subsection">
+                                <div class="subsection-title">Object-Oriented Programming (OOPS)</div>
+                                <ul class="bullet-list">
+                                    <li>Classes and Objects · Inheritance · Polymorphism</li>
+                                    <li>Encapsulation · Abstraction</li>
+                                    <li>Practical examples and interview questions</li>
+                                </ul>
+                            </div>
+                            <div class="subsection">
+                                <div class="subsection-title">Communication Skills</div>
+                                <ul class="bullet-list">
+                                    <li>Spoken English improvement · Presentation skills</li>
+                                    <li>Professional communication · Self-introduction</li>
+                                    <li>Interview communication basics</li>
+                                </ul>
+                            </div>
+                            <div class="subsection">
+                                <div class="subsection-title">Data Structures &amp; Algorithms (DSA)</div>
+                                <ul class="bullet-list">
+                                    <li>Arrays, strings, linked lists, stacks, queues</li>
+                                    <li>Searching and sorting algorithms</li>
+                                    <li>Basic algorithmic thinking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-dot">2</div>
+                        <div class="phase-header">
+                            <div class="phase-title">Phase 2 — Advanced Problem Solving &amp; Technical Practice</div>
+                            <div class="phase-duration">15–20 Days</div>
+                        </div>
+                        <div class="phase-body">
+                            <div class="subsection">
+                                <div class="subsection-title">Coding Platforms &amp; Practice</div>
+                                <p>Students practice on LeetCode and HackerRank in C, Java, or Python — simulating real
+                                    technical interview challenges used by companies.</p>
+                            </div>
+                            <div class="subsection">
+                                <div class="subsection-title">Database Management (SQL)</div>
+                                <ul class="bullet-list">
+                                    <li>Database fundamentals · SQL queries</li>
+                                    <li>Data retrieval and filtering · Joins and relationships</li>
+                                    <li>Interview-level SQL problems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-dot">3</div>
+                        <div class="phase-header">
+                            <div class="phase-title">Phase 3 — Placement Preparation &amp; Mock Interviews</div>
+                            <div class="phase-duration">15–20 Days</div>
+                        </div>
+                        <div class="phase-body">
+                            <div class="subsection">
+                                <div class="subsection-title">Aptitude Training</div>
+                                <p>Quantitative aptitude, logical reasoning, data interpretation, and problem-solving
+                                    with regular practice tests for speed and accuracy.</p>
+                            </div>
+                            <div class="subsection">
+                                <div class="subsection-title">Group Discussion (GD) Practice</div>
+                                <p>Mock group discussions to improve communication clarity, confidence, and logical
+                                    argument presentation.</p>
+                            </div>
+                            <div class="subsection">
+                                <div class="subsection-title">Technical &amp; HR Interview Preparation</div>
+                                <ul class="bullet-list">
+                                    <li>Programming concepts, DSA, OOPS, SQL — mock technical rounds</li>
+                                    <li>Self introduction, career goals, behavioral questions</li>
+                                    <li>Each student appears in 3–4 mock interview sessions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section" style="margin-top:48px;">
+                    <div class="section-title">Professional Profile Building</div>
+                    <div class="card-grid">
+                        <div class="card"><span class="card-icon">💻</span>
+                            <div class="card-title">GitHub Profile</div>
+                            <div class="card-desc">Create and manage GitHub, upload coding projects, and showcase
+                                technical work publicly to recruiters.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">📄</span>
+                            <div class="card-title">Resume Building</div>
+                            <div class="card-desc">Guidance on highlighting technical skills, academic projects,
+                                internship experience, and achievements.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🔗</span>
+                            <div class="card-title">LinkedIn Optimization</div>
+                            <div class="card-desc">Professional headline, showcasing skills/projects, building networks,
+                                and connecting with recruiters.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch7')">← Chapter 07</button>
+                <button class="ch-nav-btn" onclick="show('ch9')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 9: Benefits for College ══ -->
+        <section id="ch9" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 09</div>
+                <h2 class="ch-title">Benefits for the College</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The CRT program provides significant value to the college in terms of placement success,
+                        reputation, and industry collaboration.</p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card"><span class="card-icon">📈</span>
+                        <div class="card-title">Improved Placement Results</div>
+                        <div class="card-desc">Higher placement success rates, better company interview performance, and
+                            increased student confidence.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🏭</span>
+                        <div class="card-title">Industry-Aligned Training</div>
+                        <div class="card-desc">Modern programming, real-world coding, professional communication, and
+                            interview preparation strategies.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🏆</span>
+                        <div class="card-title">Stronger Placement Branding</div>
+                        <div class="card-desc">Attract more companies, improve placement statistics, and strengthen
+                            institutional reputation.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🖥️</span>
+                        <div class="card-title">Structured Skill Development</div>
+                        <div class="card-desc">CBT portal, daily learning materials, practice tests, and performance
+                            tracking for students.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🤝</span>
+                        <div class="card-title">Industry–Academia Collaboration</div>
+                        <div class="card-desc">Exposure to industry expectations, real interview processes, and guidance
+                            from experienced mentors.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">👥</span>
+                        <div class="card-title">Skill Development at Scale</div>
+                        <div class="card-desc">Train a large number of students simultaneously in a structured,
+                            consistent manner.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🔄</span>
+                        <div class="card-title">Long-Term Institutional Value</div>
+                        <div class="card-desc">A sustainable placement preparation system for future batches — improving
+                            outcomes year after year.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch8')">← Chapter 08</button>
+                <button class="ch-nav-btn" onclick="show('ch10')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 10: Benefits for Artifact Geeks ══ -->
+        <section id="ch10" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 10</div>
+                <h2 class="ch-title">Benefits for Artifact Geeks</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The CRT program creates strategic advantages for Artifact Geeks by strengthening its role as an
+                        industry training partner for colleges.</p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card"><span class="card-icon">🤝</span>
+                        <div class="card-title">Industry–Academia Collaboration</div>
+                        <div class="card-desc">Long-term relationships with colleges, becoming a trusted training
+                            partner for placement preparation.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">📣</span>
+                        <div class="card-title">Brand Visibility in Colleges</div>
+                        <div class="card-desc">Direct brand presence among students, faculty, and TPOs — establishing
+                            Artifact Geeks as a leading training institute.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🔍</span>
+                        <div class="card-title">Talent Identification</div>
+                        <div class="card-desc">Opportunity to identify talented and motivated students for internship
+                            opportunities, advanced programs, and mentorship.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">🚀</span>
+                        <div class="card-title">Expansion of Training Programs</div>
+                        <div class="card-desc">Introduce advanced technical courses, certifications, internship
+                            training, and specialized skill development programs.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">💎</span>
+                        <div class="card-title">Strengthening Market Position</div>
+                        <div class="card-desc">Build success stories, generate testimonials, and enhance credibility in
+                            the industry.</div>
+                    </div>
+                    <div class="card"><span class="card-icon">📅</span>
+                        <div class="card-title">Long-Term Partnerships</div>
+                        <div class="card-desc">Colleges with positive outcomes continue collaborating for future batches
+                            — building sustained institutional relationships.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch9')">← Chapter 09</button>
+                <button class="ch-nav-btn" onclick="show('ch11')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 11: Rules ══ -->
+        <section id="ch11" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 11</div>
+                <h2 class="ch-title">Rules &amp; Important Notes for CRT Implementation</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>Certain guidelines and operational rules must be followed by both the college and the training
+                        partner to ensure smooth execution and effectiveness of the CRT program.</p>
+                </div>
+
+                <div class="rule-box">
+                    <div class="rule-num">1</div>
+                    <div class="rule-content">
+                        <h4>Program Duration</h4>
+                        <p>The CRT program runs for 3 to 3.5 months (approximately 75–90 days). All three training
+                            phases must be completed, concluding with placement readiness preparation.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">2</div>
+                    <div class="rule-content">
+                        <h4>Infrastructure Support by College</h4>
+                        <p>The college provides classroom or seminar hall, projector or smart classroom, internet
+                            connectivity, and basic classroom seating.</p>
+                    </div>
+                </div>
+
+                <div class="section" style="margin-top:32px;">
+                    <div class="section-title">Rule 3 · Student Progress Tracking</div>
+                    <div class="card-grid">
+                        <div class="card"><span class="card-icon">📒</span>
+                            <div class="card-title">Physical Handbook (By College)</div>
+                            <div class="card-desc">Daily learning progress, practice tasks completed, mentor feedback,
+                                interview remarks, and improvement notes.</div>
+                        </div>
+                        <div class="card"><span class="card-icon">🖥️</span>
+                            <div class="card-title">Online Tracking (By Artifact Geeks)</div>
+                            <div class="card-desc">Daily records, assignment status, mock interview feedback, mentor
+                                remarks — exportable for internal use.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rule-box">
+                    <div class="rule-num">4</div>
+                    <div class="rule-content">
+                        <h4>Mentor-Based Remarks System</h4>
+                        <p>Only the assigned mentor can add remarks and feedback related to student performance,
+                            technical understanding, communication improvement, and interview readiness.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">5</div>
+                    <div class="rule-content">
+                        <h4>Student Agreement with CRT Policy</h4>
+                        <p>Before starting, each student reviews and signs the CRT participation policy — covering
+                            attendance, participation, assignment completion, and discipline.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">6</div>
+                    <div class="rule-content">
+                        <h4>Flexibility in Subject Coverage</h4>
+                        <p>Subjects and training modules may be adjusted based on industry hiring trends, company
+                            requirements, student skill levels, or placement opportunities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch10')">← Chapter 10</button>
+                <button class="ch-nav-btn" onclick="show('ch12')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 12: CRT Policy ══ -->
+        <section id="ch12" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 12</div>
+                <h2 class="ch-title">CRT Policy</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Objective</div>
+                    <p>The CRT Policy establishes clear guidelines for students participating in the program, ensuring
+                        discipline, commitment, and effective learning. All students must read and agree before the
+                        program begins.</p>
+                </div>
+
+                <div class="rule-box">
+                    <div class="rule-num">1</div>
+                    <div class="rule-content">
+                        <h4>Attendance Policy</h4>
+                        <p>Students must maintain at least 80–85% attendance. Absence without prior notification may
+                            affect participation in mock interviews and final assessments. Repeated absence may lead to
+                            removal from the program.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">2</div>
+                    <div class="rule-content">
+                        <h4>Participation &amp; Engagement</h4>
+                        <p>Students must actively attend training sessions, complete assignments and coding practice,
+                            participate in CBT tests, and attend mock interviews and group discussions.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">3</div>
+                    <div class="rule-content">
+                        <h4>Assignment &amp; Practice Requirements</h4>
+                        <p>Complete all assigned tasks: aptitude exercises, coding assignments, communication practice,
+                            and mock interview preparation. Failure may impact overall performance evaluation.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">4</div>
+                    <div class="rule-content">
+                        <h4>Code of Conduct</h4>
+                        <p>Respect mentors and fellow participants, follow session instructions, avoid cheating during
+                            CBT tests, and maintain discipline during group discussions and mock interviews.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">5</div>
+                    <div class="rule-content">
+                        <h4>Progress Tracking</h4>
+                        <p>Student performance is continuously tracked through CBT test scores, assignment completion,
+                            mock interview feedback, and mentor remarks.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">6</div>
+                    <div class="rule-content">
+                        <h4>Mock Interview Participation</h4>
+                        <p>Students must attend technical mock interviews, HR mock interviews, and group discussion
+                            sessions to simulate real recruitment processes.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">7</div>
+                    <div class="rule-content">
+                        <h4>Academic Integrity</h4>
+                        <p>Cheating during CBT tests, submitting copied assignments, or misrepresenting work may lead to
+                            disciplinary action or removal from the program.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">8</div>
+                    <div class="rule-content">
+                        <h4>Compliance with CRT Guidelines</h4>
+                        <p>Students must follow all guidelines provided by training mentors and program coordinators to
+                            receive maximum benefit from the program.</p>
+                    </div>
+                </div>
+
+                <div class="callout" style="margin-top:40px;">
+                    <p>By participating in the CRT program, students acknowledge that they have read the policy,
+                        understood the rules and expectations, and agreed to follow all program guidelines.</p>
+                    <span class="callout-source">— Student Declaration</span>
+                </div>
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch11')">← Chapter 11</button>
+                <button class="ch-nav-btn" onclick="show('ch13')">Next Chapter →</button>
+            </div>
+        </section>
+
+
+        <!-- ══ CH 13: Student Consent Form ══ -->
+        <section id="ch13" class="chapter">
+            <div class="ch-header">
+                <div class="ch-number">Chapter 13</div>
+                <h2 class="ch-title">Student Consent Form</h2>
+            </div>
+            <div class="ch-body">
+                <div class="ch-objective">
+                    <div class="obj-label">Note</div>
+                    <p>Campus Recruitment Training (CRT) is <strong>not mandatory</strong>, but it provides a valuable
+                        opportunity for students to prepare for campus placements and improve their employability
+                        skills. Students participating must follow all rules and guidelines below.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Program Rules Summary</div>
+                    <div class="rule-box">
+                        <div class="rule-num">1</div>
+                        <div class="rule-content">
+                            <h4>Entry Rules</h4>
+                            <p>Students must enter the classroom 10 minutes before scheduled training time. Late arrival
+                                = marked absent for that session.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">2</div>
+                        <div class="rule-content">
+                            <h4>Class Attendance &amp; Absentee Policy</h4>
+                            <ul class="bullet-list" style="margin-top:8px;">
+                                <li><strong>1st Absence:</strong> Allowed</li>
+                                <li><strong>2nd Absence:</strong> ₹500 penalty</li>
+                                <li><strong>3rd Absence:</strong> Debarred from remaining CRT sessions and placement
+                                    activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">3</div>
+                        <div class="rule-content">
+                            <h4>Evaluation Booklet / Handbook</h4>
+                            <p>If the booklet is damaged or lost, a new evaluation booklet will not be issued. Students
+                                are responsible for maintaining it throughout the program.</p>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">4</div>
+                        <div class="rule-content">
+                            <h4>CBT Absentee Policy</h4>
+                            <ul class="bullet-list" style="margin-top:8px;">
+                                <li><strong>1st Absence:</strong> Allowed</li>
+                                <li><strong>2nd Absence:</strong> Debarred from further CBT activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rule-box">
+                        <div class="rule-num">5</div>
+                        <div class="rule-content">
+                            <h4>General Guidelines</h4>
+                            <ul class="bullet-list" style="margin-top:8px;">
+                                <li>Maintain discipline and professional behavior during training sessions</li>
+                                <li>Follow all training instructions provided by mentors and coordinators</li>
+                                <li>Misconduct or repeated violations may result in removal from the CRT program</li>
+                                <li>Formal attire required during DAT, Orientation, and CRT Phase III</li>
+                                <li>College ID card must be carried during all CRT sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p
+                    style="font-size:13.5px;color:var(--text-light);background:rgba(192,57,43,0.05);border-left:3px solid #c0392b;padding:12px 16px;border-radius:0 4px 4px 0;">
+                    The Training &amp; Placement Officer (TPO) holds the final decision-making authority regarding
+                    policy enforcement and disciplinary actions.</p>
+
+                <!-- Consent Form -->
+                <div class="consent-form">
+                    <h3>📋 Consent &amp; Declaration Form — Batch 2026</h3>
+
+                    <div class="consent-section">
+                        <h4>Student Consent</h4>
+                        <p style="font-size:14px;color:var(--text-mid);margin-bottom:20px;">I confirm that I have read
+                            and understood the CRT policy and agree to follow all the rules and guidelines mentioned
+                            above.</p>
+                        <div class="signature-row">
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">Student Signature</div>
+                            </div>
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">Student Name</div>
+                            </div>
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">Roll Number</div>
+                            </div>
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">Date</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consent-section">
+                        <h4>Parent / Guardian Consent</h4>
+                        <p style="font-size:14px;color:var(--text-mid);margin-bottom:20px;">I will take responsibility
+                            for my son/daughter's adherence to the CRT rules and guidelines.</p>
+                        <div class="signature-row">
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">Parent/Guardian Signature</div>
+                            </div>
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">Parent/Guardian Name</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consent-section">
+                        <h4>TPO Approval</h4>
+                        <div class="signature-row">
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">TPO Signature</div>
+                            </div>
+                            <div>
+                                <div class="sig-field"></div>
+                                <div class="sig-label">TPO Name</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ch-nav">
+                <button class="ch-nav-btn" onclick="show('ch12')">← Chapter 12</button>
+                <button class="ch-nav-btn" onclick="show('cover')">↑ Back to Top</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function show(id) {
+            // Hide all chapters
+            document.querySelectorAll('.chapter').forEach(c => c.classList.remove('active'));
+            // Show target
+            document.getElementById(id).classList.add('active');
+            // Update nav active state
+            document.querySelectorAll('.nav-item').forEach(n => {
+                n.classList.remove('active');
+                if (n.getAttribute('onclick') && n.getAttribute('onclick').includes(id)) {
+                    n.classList.add('active');
+                }
+            });
+            // Scroll to top
+            window.scrollTo(0, 0);
+            document.getElementById('main').scrollTo(0, 0);
+        }
+    </script>
+</body>
+
+</html>

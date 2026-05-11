@@ -9,9 +9,13 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/webp" href="images/crt.webp">
 </head>
 
 <body>
+
+    <!-- ── MOBILE NAV TOGGLE ── -->
+    <button id="mobile-toggle" onclick="toggleSidebar()">☰</button>
 
     <!-- ── SIDEBAR ── -->
     <nav id="sidebar">
@@ -45,43 +49,37 @@
 
         <!-- ══ COVER ══ -->
         <section id="cover" class="chapter active">
-            <div
-                style="min-height:100vh; background:var(--navy); display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:80px 100px; position:relative; overflow:hidden;">
-                <div
-                    style="position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle, rgba(212,168,67,0.15) 0%, transparent 70%);pointer-events:none;">
-                </div>
-                <div
-                    style="position:absolute;bottom:-80px;left:40%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle, rgba(14,116,144,0.12) 0%, transparent 70%);pointer-events:none;">
-                </div>
+            <!-- Decorative Glows -->
+            <div class="cover-glow cover-glow-top"></div>
+            <div class="cover-glow cover-glow-bottom"></div>
 
-                <div class="cover-eyebrow">Artifact Geeks · Batch 2026</div>
-                <h1 class="cover-title">Campus<br>Recruitment<br><span>Training</span></h1>
-                <div class="cover-rule"></div>
-                <p class="cover-subtitle">A comprehensive guide for students, faculty, and placement officers — covering
-                    every phase of structured placement preparation.</p>
+            <div class="cover-eyebrow">Artifact Geeks · Batch 2026</div>
+            <h1 class="cover-title">Campus<br>Recruitment<br><span>Training</span></h1>
+            <div class="cover-rule"></div>
+            <p class="cover-subtitle">A comprehensive guide for students, faculty, and placement officers — covering
+                every phase of structured placement preparation.</p>
 
-                <div class="cover-stats">
-                    <div class="stat-item">
-                        <span class="stat-num">90</span>
-                        <span class="stat-label">Days Program</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num">3</span>
-                        <span class="stat-label">Training Phases</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num">13</span>
-                        <span class="stat-label">Chapters</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num">4</span>
-                        <span class="stat-label">Core Books</span>
-                    </div>
+            <div class="cover-stats">
+                <div class="stat-item">
+                    <span class="stat-num">90</span>
+                    <span class="stat-label">Days Program</span>
                 </div>
-
-                <div class="cover-badge">Complete Program Reference Guide</div>
-                <div class="cover-corner-art">CRT</div>
+                <div class="stat-item">
+                    <span class="stat-num">3</span>
+                    <span class="stat-label">Training Phases</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">13</span>
+                    <span class="stat-label">Chapters</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">4</span>
+                    <span class="stat-label">Core Books</span>
+                </div>
             </div>
+
+            <div class="cover-badge">Complete Program Reference Guide</div>
+            <div class="cover-corner-art">CRT</div>
 
             <div class="ch-body" style="padding-top:60px;">
                 <div class="section-title" style="font-size:28px;margin-bottom:24px;">Table of Contents</div>
@@ -1331,6 +1329,10 @@
     </main>
 
     <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
         function show(id) {
             // Hide all chapters
             document.querySelectorAll('.chapter').forEach(c => c.classList.remove('active'));
@@ -1339,13 +1341,18 @@
             // Update nav active state
             document.querySelectorAll('.nav-item').forEach(n => {
                 n.classList.remove('active');
-                if (n.getAttribute('onclick') && n.getAttribute('onclick').includes(id)) {
+                if (n.getAttribute('onclick') && n.getAttribute('onclick').includes("'" + id + "'")) {
                     n.classList.add('active');
                 }
             });
             // Scroll to top
             window.scrollTo(0, 0);
             document.getElementById('main').scrollTo(0, 0);
+
+            // Close sidebar on mobile after selection
+            if (window.innerWidth <= 991) {
+                document.getElementById('sidebar').classList.remove('open');
+            }
         }
     </script>
 </body>
